@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{ background-color: #363534;}
+body{ 
+    min-height: 100vh;
+    height:100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.wrapper{
+    display:flex;
+    height:100%;
+}
+.side-panel-toggle{
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+    display:grid;
+    place-items:center;
+
+    border:none;
+    border-radius: 5px 0 0 5px;
+    outline:none;
+    cursor:pointer;
+}
+.sp-icon-close{
+    display:none !important;
+}
+
+.side-panel{
+    display:none;
+    width:200px;
+    flex-shrink:0;
+    padding:20px;
+    color:white;
+    background:#bb9c10;
+    box-shadow: 0 0 10px rbga(0, 0, 0, 0.35);
+}
+
+.side-panel-open .side-panel{
+    display: initial;
+}
+
+.side-panel-open .sp-icon-open{
+    display:none !important;
+}
+
+.side-panel-open .sp-icon-close{
+    display:initial !important;
+}
+.container{
+    height:100%;
+    width:100vw;
+    background-color:#363534;
+    flex-grow:1;
+    margin-right:-40px;
+}
+
+.result{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    color:white;
+    height:65%;
+}
+
+.result span{
+    margin-right:60px;
+    font-size:130px;
+    justify-self:flex-end;
+}
+
+.buttons{
+    width:100%;
+    height:60%;
+    background-color:#2b2b2a;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    color:white;
+    border-radius:25px;
+    width:300px;
+    height:80px;
+}
+
+.instructions{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    color:white;
+    height:30px;
+}
+
+button{
+    background-color: #c2a00a;
+}
+
+button:hover{
+    color:#fae793;
+}
+
+button:active{
+    background-color:#f0c816;
+}
+
+input{
+    width:100%;
+    height:100%;
+    background-color: #363534;
+    color:white;
+    font-size:230px;
+}
+
+p{
+    color:white;
+    width:200%;
+}

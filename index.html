@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Ten Functions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper side-panel-open">
+            <div class="container">
+                <div class="result">
+                    <span id="output">Output</span>
+                </div>
+                
+                <div class="buttons">
+                    <button class="item" onclick="add()">Add</button>
+                    <button class="item" onclick="strLength()">StrLength</button>
+                    <button class="item" onclick="getLargest()">GetLargest</button>
+                    <button class="item" onclick="returnEvenOdd()">ReturnEvenOdd</button>
+                    <button class="item" onclick="returnStringA()">ReturnStringA</button>
+                    <button class="item" onclick="capitalize()">Capitalize</button>
+                    <button class="item" onclick="addArray()">AddArray</button>
+                    <button class="item" onclick="getFactorial()">GetFactorial</button>
+                    <button class="item" onclick="getEvenArray()">GetEvenArray</button>
+                    <button class="item" onclick="removeVowels()">RemoveVowels</button>
+                </div>
+    
+                <div class="input">
+                    <input type="text" placeholder="Input" id="userInput">
+                </div>
+            </div>
+            <button class="side-panel-toggle" type="button">
+                <span class="material-symbols-outlined sp-icon-open">keyboard_double_arrow_left</span>
+                <span class="material-symbols-outlined sp-icon-close">keyboard_double_arrow_right</span>
+            </button>
+            <div class="side-panel">
+                Syntax:<br>
+                <br>Add <br>(n1,n2)<br>
+                <br>StrLength <br>(text)<br>
+                <br>GetLargest <br>(n1,n2,...)<br>
+                <br>ReturnEvenOdd <br>(num)<br>
+                <br>ReturnStringA (str1,str2,...)<br>
+                <br>Capitalize <br>(text)<br>
+                <br>AddArray <br>(n1,n2,...)<br>
+                <br>GetFactorial  <br>(num)<br>
+                <br>GetEvenArray (n1,n2,...)<br>
+                <br>RemoveVowels (str1,str2,...)<br>
+            </div>
+        </div>
+        <script src="index_PORTER.js"></script>
+    </body>
+</html>
